@@ -587,7 +587,8 @@ module.exports = yeoman.Base.extend({
 
         if (this.extensionConfig.installDependencies) {
             this.installDependencies({
-                npm: true,
+                yarn: true,
+                npm: false,
                 bower: false
             });
         }
